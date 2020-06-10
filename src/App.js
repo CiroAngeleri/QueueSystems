@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Select, MenuItem, FormControl, InputLabel } from '@material-ui/core'
+import { TextField, Select, MenuItem, FormControl } from '@material-ui/core'
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import './App.css';
 
