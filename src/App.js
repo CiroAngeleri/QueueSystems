@@ -77,11 +77,11 @@ const App = () => {
       </div>
       <div className="results-container">
           <CssTextField value={`${Math.round(Ls)} cliente/s`} label="Promedio de unidades en el sistema (Ls)" variant="filled" disabled/>
-          <CssTextField value={`${Math.round(Ws)} ${timeUnit}`} label="Tiempo de unidad en el sistema (Ws)" variant="filled" disabled/>
+          <CssTextField value={`${Ws.toFixed(2)} ${timeUnit}`} label="Tiempo de unidad en el sistema (Ws)" variant="filled" disabled/>
           <CssTextField  value={`${Math.round(Lq)} cliente/s`} label="Promedio de unidades en la fila (Lq)" variant="filled" disabled/>
       </div>
       <div className="results-container">
-          <CssTextField value={`${Math.round(Wq)} ${timeUnit}`} label="Tiempo de espera en la fila (Wq)" variant="filled" disabled/>
+          <CssTextField value={`${Wq.toFixed(2)} ${timeUnit}`} label="Tiempo de espera en la fila (Wq)" variant="filled" disabled/>
           <CssTextField value={`${Math.round(P)}%`} label="Factor de uso del sistema (P)" variant="filled" disabled/>
           <CssTextField value={`${Math.round(P0)}%`} label="Ninguna unidad en el sistema (P0)" variant="filled" disabled/>
       </div>
