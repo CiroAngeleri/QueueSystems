@@ -31,7 +31,6 @@ const App = () => {
   const classes = useStyles()
   let Ls = 0, Ws = 0, Lq = 0, Wq = 0, P = 0, P0 = 0
 
-  console.log({mu, lambda})
   if (mu > 0 && lambda > 0 && mu > lambda) {
     Ls = lambda / (mu / lambda)
     Ws = 1 / (mu - lambda)
@@ -48,7 +47,7 @@ const App = () => {
         <CssTextField 
           type="number" 
           inputProps={{ min: "0"}}
-          onChange={({ target }) => setState({mu, lambda: parseInt(target.value)})} 
+          onChange={({ target }) => setState({mu, lambda: parseFloat(target.value)})} 
           id="lambda" 
           label="Λ" 
           placeholder="Inserte Lambda" 
@@ -57,7 +56,7 @@ const App = () => {
         <CssTextField
           type="number" 
           inputProps={{ min: "0"}}
-          onChange={({ target }) => setState({lambda, mu: parseInt(target.value)})} 
+          onChange={({ target }) => setState({lambda, mu: parseFloat(target.value)})} 
           id="mu" 
           label="μ" 
           placeholder="Inserte Mu" 
