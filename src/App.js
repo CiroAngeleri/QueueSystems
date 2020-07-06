@@ -3,6 +3,7 @@ import { TextField, Select, MenuItem, FormControl } from '@material-ui/core';
 import { withStyles, makeStyles } from '@material-ui/core/styles';
 import './App.css';
 import { Link } from 'react-router-dom';
+import { SocialMediaIconsReact } from 'social-media-icons-react';
 
 
 const CssTextField = withStyles({
@@ -108,6 +109,7 @@ const App = (props) => {
         <Link to="/"> Ir a M/M/1 </Link>
         <Link to="/mg1"> Ir a M/G/1 </Link>
         <Link to="/md1"> Ir a M/D/1 </Link>
+        <SocialMediaIconsReact size={45} icon="github" url="https://github.com/CiroAngeleri/QueueSystems" />
       </div>
       <div className="header">Implementacion de {props.type} por Angeleri Ciro</div>
       <div className="inputs-container">

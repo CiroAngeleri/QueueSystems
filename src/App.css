@@ -65,9 +65,11 @@
 
 .links  {
   display: flex;
+  align-items: flex-start;
   margin-bottom: 15px;
 }
 
 .links > * {
   margin-right: 25px;
+  font-size: 37px;
 }
